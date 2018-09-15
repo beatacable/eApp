@@ -1,0 +1,23 @@
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+div
+{
+    text-align: center;
+}​
+
+label {
+  text-align: center;
+}
+form label,form input, form table {
+   display: left;
+   width: 18em;
+}

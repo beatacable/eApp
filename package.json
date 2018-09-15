@@ -1,0 +1,23 @@
+{
+  "name": "eapp",
+  "version": "1.0.0",
+  "description": "creating rax email page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatacable/eApp.git"
+  },
+  "author": "beata cable",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beatacable/eApp/issues"
+  },
+  "homepage": "https://github.com/beatacable/eApp#readme",
+  "dependencies": {
+    "angular": "^1.7.4"
+  }
+}
