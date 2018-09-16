@@ -21,3 +21,6 @@ form label,form input, form table {
    display: left;
    width: 18em;
 }
+button {
+  width: 18em;
+}

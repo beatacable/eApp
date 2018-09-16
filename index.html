@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
     <script language="JavaScript" src="./js/app.js"></script>
     <script language="JavaScript" src="./js/qty.js"></script>
+    <script language="JavaScript" src="./js/submit.js"></script>
 
 <script>var dataLayer = [{"drupalLanguage":"en","drupalCountry":"","siteName":"Rackspace Hosting","userUid":0,"sales_phone":"1-800-961-2888","liveagent_show":true,"liveagent_slider_show":true,"env":"production","language":"en","page_name":"www:empty-page","region":"us","site_section":"rackspace","site_language":"en","url_alias":"\/empty-page","pricing_region":"USA","currency_list":["USD","GBP","AUD","EUR"],"currency_current":"USD"}];
 </script>
@@ -690,18 +691,19 @@
   </div>
 
 
-  <div ng-app="eApp" ng-controller="myCtrl">
+  <div ng-app="eApp" data-ng-controller="myCtrl">
 
   <h2>Select Email Option:</h2>
     <select ng-model="selectedEmail" ng-options="y.name for (x, y) in emails">
   </select>
 
-  <h3>You selected: {{selectedEmail.name}}</h3>
-  <h3>Price: {{selectedEmail.price}}</h3>
+  <option>You selected: {{selectedEmail.name}}</option>
+  <option>Price: {{selectedEmail.price}}</option>
+  </select>
   <br>
   <br>
 
-  
+
 
   <center><form name="order" id="order">
     <table>
@@ -718,7 +720,7 @@
                 <label for="product">Product Desc:</label>
             </td>
             <td>
-                <input id="product_desc" name="product" type="text" size="28" required/>
+                <input id="product_desc" name="product" type="text" ng-model = "product_desc" size="28" required/>
             </td>
         </tr>
         <tr>
@@ -753,6 +755,13 @@
 </center>
   <br>
 
+  <a href="submitForm"
+   class="btn btn-info "
+   ng-click="submit()">
+  <span class="glyphicon glyphicon-plus-sign"></span>Submit</a>
+
+<br>
+<br>
     <div class="footer">
       <div class="footer-container">
       <div id="block-rackspace-footertabs">
